@@ -8,17 +8,17 @@ public class AdressePostale {
 	
 	/* Constructeur par défaut */
 	public AdressePostale(){
-		numeroRue = 1; 
-		libelleVoie = ""; 
-		codePostal = 1; 
-		ville = "?!?";
+		this.numeroRue = 1; 
+		this.libelleVoie = ""; 
+		this.codePostal = 1; 
+		this.ville = "?!?";
 	}
 	
 	/* Constructeur avec paramétres */
-	public AdressePostale(int nRue,String lVoie,int cP,String V){
-		numeroRue = nRue; 
-		libelleVoie = lVoie; 
-		codePostal = cP; 
-		ville = V;
+	public AdressePostale(int numeroRue,String libelleVoie,int codePostal,String ville){
+		this.numeroRue = numeroRue; 
+		this.libelleVoie = libelleVoie; 
+		this.codePostal = codePostal; 
+		this.ville = ville;
 	}
 }
