@@ -1,7 +1,22 @@
 package entites;
 
 public class Personne {
-	public String nom;
-	public String prenom;
-	public AdressePostale adresse;
+	String nom;
+	String prenom;
+	AdressePostale adresse;
+	
+	
+	/* Constructeur par défaut */
+	public Personne(){
+		nom = "";
+		prenom = "";
+		adresse = new AdressePostale(1,"",1,"") ;
+	}
+	
+	/* Constructeur avec paramétres */
+	public Personne(String pNom, String pPrenom,AdressePostale aAdresse){
+		nom = pNom;
+		prenom = pPrenom;
+		adresse = aAdresse;
+	}
 }
